@@ -118,6 +118,7 @@ pop the top character from stack
 dequeue the first character from queue
 compare both characters
 If the comparison fails, set is_palindrome as False.
+T
 '''
 for index in range(length_of_text):
     if solution.pop_character() != solution.dequeue_character():
@@ -127,3 +128,5 @@ for index in range(length_of_text):
 # finally print whether string text is palindrome or not.
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
+else:
+    print("The word, " + text + ", is not a palindrome.")
